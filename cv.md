@@ -8,7 +8,7 @@
 
 ## Summary
 
-I'm at the stage of _learning_ programming now. My main purpose is to get new new knowledge and improve my skills with new technologies and programming languages. My **strong point** is that I quite quickly understand the educational materials.  
+I'm at the stage of _learning_ programming. My main purpose is to get new knowledge and improve my skills with technologies and programming languages. My **strong point** is that I quite quickly understand the educational materials.  
 Now I work as a systems analyst. My main responsibilities are writing technical and supporting documentation, database administration (Postgres).
 
 ## Key skills
@@ -20,7 +20,7 @@ Now I work as a systems analyst. My main responsibilities are writing technical 
 -   HTML (using Bootstrap)
 -   Technical writing
 
-## Примеры кода ([GitHub](https://github.com/OlgaUsovich/finalProject/ 'view the project on GitHub'))
+## Code examples ([GitHub](https://github.com/OlgaUsovich/finalProject/ 'view the project on GitHub'))
 
 -   Python
 
@@ -47,10 +47,6 @@ def show_history(request):
 
 ```html
 <div class="container">
-	<div style="padding-top: 10px; padding-bottom: 10px;">
-		<a type="button" class="btn btn-dark" href="{% url 'products:list' %}">Вернуться на главную</a>
-		<a type="button" class="btn btn-secondary" href="{% url 'authentication:profile' %}">Назад</a>
-	</div>
 	<div class="row">
 		{% for order in pages %}
 		<div class="col-lg-12" style="padding-bottom: 10px; padding-top: 10px;">
@@ -85,8 +81,6 @@ def show_history(request):
 				</tbody>
 			</table>
 		</div>
-		{% empty %}
-		<h5 class="product-name-detail">Вы еще ничего не заказывали.</h5>
 		{% endfor %}
 	</div>
 </div>
