@@ -24,7 +24,7 @@ Now I work as a systems analyst. My main responsibilities are writing technical 
 
 -   Python
 
-```python
+```
 @login_required
 def show_history(request):
     user_info = request.user
@@ -81,7 +81,7 @@ def show_history(request):
 
 -   CSS
 
-```css
+```
 @font-face {
 	font-family: 'Playlist-Script';
 	src: url('/static/Playlist-Script.ttf.woff') format('woff');
