@@ -45,7 +45,7 @@ def show_history(request):
 
 -   HTML
 
-```html
+```
 <div class="container">
 	<div class="row">
 		{% for order in pages %}
@@ -71,13 +71,6 @@ def show_history(request):
 						<td>{{ item.quantity }}</td>
 						<td>{{ item.price }}</td>
 					</tr>
-
-					<tr>
-						<th class="{% if forloop.last %}table-success{% endif %}" colspan="4">
-							{% if forloop.last %}Общая сумма заказа: {{ order_.sum }}{% endif %}
-						</th>
-					</tr>
-					{% endfor %}
 				</tbody>
 			</table>
 		</div>
